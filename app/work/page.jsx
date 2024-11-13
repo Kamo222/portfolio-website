@@ -22,30 +22,29 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "Project 1",
+    title: "Konnektion",
     description:
-      "A responsive website",
+      "A web design agency",
     stack: [
       { name: "Next.js" },
       { name: "Tailwind Css" },
       { name: "Shadcn UI" },
+      { name: "Firebase" },
     ],
-    image: "/assets/work/thumb1.png",
+    image: "/assets/work/work13.jpg",
     live: "",
     github: "",
   },
   {
     num: "02",
     category: "fullstack",
-    title: "Chat App",
+    title: "eHustle",
     description:
-      "A basic chat app",
+      "A self-development platform",
     stack: [
-      { name: "React.js" },
-      { name: "Node.js" },
-      { name: "Express.js" },
-      { name: "Mongoose.js" },
-      { name: "Socket.io" },
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "Shadcn UI" },
     ],
     image: "/assets/work/thumb2.png",
     live: "",
@@ -54,7 +53,7 @@ const projects = [
   {
     num: "03",
     category: "backend",
-    title: "Project 3",
+    title: "Wallet Management System",
     description:
       "A wallet management API",
     stack: [
@@ -87,18 +86,18 @@ const Work = () => {
           ease: "easeIn",
         },
       }}
-      className="min-h-[75hv] flex flex-col justify-center xl:px-0"
+      className="min-h-[80hv] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+          <div className="w-full xl:w-[35rem] xl:h-[25rem] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
             </div>
             <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-              {project.category} project
+              {project.title}
             </h2>
             <p className="text-white/60">{project.description}</p>
             <ul className="flex gap-4">
@@ -139,11 +138,11 @@ const Work = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full xl:w-[50%]">
+          <div className="w-full xl:w-[50%] h-[20rem]">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[25rempx] mb-12"
+              className="xl:h-[20rem] xl:w-[35rem]"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
