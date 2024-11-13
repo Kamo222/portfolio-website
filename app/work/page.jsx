@@ -87,7 +87,7 @@ const Work = () => {
           ease: "easeIn",
         },
       }}
-      className="min-h-[80hv] flex flex-col justify-center py-12 xl:px-0"
+      className="min-h-[75hv] flex flex-col justify-center xl:px-0"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
@@ -143,13 +143,13 @@ const Work = () => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px] mb-12"
+              className="xl:h-[25rempx] mb-12"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[20rem] relative group flex justify-center items-center bg-pink-50/20">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         <Image

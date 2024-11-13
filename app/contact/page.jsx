@@ -47,15 +47,15 @@ const Contact = () => {
           ease: "easeIn",
         },
       }}
-      className="py-6"
+      className="h-[75vh]"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:h-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form className="flex flex-col gap-4 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">Feel free to get in touch with me.</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                 <Input type="firstname" placeholder="Firstname"/>
                 <Input type="lastname" placeholder="Lastname"/>
                 <Input type="email" placeholder="Email Address"/>
@@ -75,7 +75,7 @@ const Contact = () => {
                   </SelectGroup>
                 </SelectContent>
               </Select>
-              <Textarea className="h-[200px]" placeholder="Leave a message." />
+              <Textarea className="h-[7.5rem]" placeholder="Leave a message." />
               <Button size="md" className="max-w-40">Send message</Button>
             </form>
           </div>

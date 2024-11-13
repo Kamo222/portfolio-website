@@ -157,7 +157,7 @@ const Resume = () => {
         opacity: 1,
         transition: { delay: 1, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[60vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
         <Tabs
@@ -171,15 +171,15 @@ const Resume = () => {
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
 
-          <div className="min-h-[70vh} w-full">
+          <div className="min-h-[65vh} w-full">
             <TabsContent value="experience" className=" w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-4 text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
 
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[10rem]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
@@ -204,13 +204,13 @@ const Resume = () => {
             </TabsContent>
 
             <TabsContent value="education" className=" w-full h-full">
-              <div className="flex flex-col gap-[30px] text-left xl:text-left">
+              <div className="flex flex-col gap-4 text-left xl:text-left">
                 <h3 className="text-4xl font-bold">{certifications.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {certifications.description}
                 </p>
 
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[20rem]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {certifications.items.map((item, index) => {
                       return (
@@ -235,14 +235,14 @@ const Resume = () => {
             </TabsContent>
 
             <TabsContent value="skills" className=" w-full h-full">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[20rem]">
                 <ul className="grid grid-cols-2 sm:grid-cols-3 xl:gap-[30px] gap-4">
                   {skills.skillList.map((skill, index) => {
                     return (
@@ -267,15 +267,15 @@ const Resume = () => {
               </div>
             </TabsContent>
             <TabsContent value="about" className=" w-full text-center xl:text-left">
-              <div className="flex flex-col gap-[30px]">
+              <div className="flex flex-col gap-6">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                <ul className="grid grid-col-1 xl:grid-cols-1 gap-y-6 max-w-[620px] mx-auto xl:mx-0 xl:h-auto">
+                <ul className="grid grid-col-1 xl:grid-cols-1 gap-y-3 max-w-[620px] mx-auto xl:mx-0 xl:h-auto">
                   {
                     about.info.map((item, index) => {
                         return <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
                           <span className="text-white/60 ">{item.fieldName}</span>
-                          <span className="text-white ">{item.fieldValue}</span>
+                          <span className="text-white text-xl">{item.fieldValue}</span>
                         </li>
                     })
                   }

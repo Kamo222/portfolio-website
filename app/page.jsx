@@ -8,18 +8,17 @@ const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-8">
+        <div className="flex flex-col xl:flex-row items-center justify-between">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Full Stack Developer</span>
-            <h1 className="h1 mb-3">
+            <h1 className="h1">
               Hello I'm <br />
               <span className="text-accent">Kamohelo Mamaregane</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I'm profient
-              in various programming languages and web technologies.
+            <p className="max-w-[500px]  text-white/80">
+              I excel at crafting elegant digital experiences.
             </p>
-            <div className="flex flex-col xl:flex-row items-center gap-8">
+            <div className="flex flex-col xl:flex-row items-center gap-6 pt-2">
               <Button
                 variant="outline"
                 size="lg"

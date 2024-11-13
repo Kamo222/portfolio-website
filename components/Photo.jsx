@@ -19,19 +19,19 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 1.2, duration: 0.6, ease: "easeInOut" },
           }}
-          className="w-[245px] h-[245px] xl:w-[400px] xl:h-[400px] mix-blend-lighten absolute "
+          className="w-[298px] h-[298px] xl:w-[380px] xl:h-[380px] mix-blend-lighten absolute "
         >
           <Image
-            src="/assets/portfolio-image2.png"
+            src="/assets/portfolio-image2.jpg"
             priority
             quality={100}
             fill
             alt=""
-            className="object-contain rounded-full"
+            className="object-contain rounded-full mr-3 mt-1 xl:ml-1 xl:mt-3"
           />
         </motion.div>
         <motion.svg
-          className="w-[250px] xl:w-[400px] h-[250px] xl:h-[400px]"
+          className="w-[300px] xl:w-[400px] h-[300px] xl:h-[400px]"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const Photo = () => {
           <motion.circle
             cx="253"
             cy="253"
-            r="250"
+            r="200"
             stroke="#FF3232"
             strokeWidth="4"
             strokeLinecap="round"
