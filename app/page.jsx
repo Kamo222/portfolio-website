@@ -16,7 +16,7 @@ const Home = () => {
               <span className="text-accent">Kamohelo Mamaregane</span>
             </h1>
             <p className="max-w-[500px]  text-white/80">
-              I excel at crafting elegant digital experiences.
+            Creating digital experiences that inspire, inform, and connect - one pixel at a time.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-6 pt-2">
               <Button

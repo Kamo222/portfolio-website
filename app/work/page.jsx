@@ -32,8 +32,8 @@ const projects = [
       { name: "Firebase" },
     ],
     image: "/assets/work/work13.jpg",
-    live: "",
-    github: "",
+    live: "www.konnektion.co.za",
+    github: "https://github.com/Kamo222/konnektion-demo",
   },
   {
     num: "02",
@@ -46,7 +46,7 @@ const projects = [
       { name: "Tailwind.css" },
       { name: "Shadcn UI" },
     ],
-    image: "/assets/work/thumb2.png",
+    image: "/assets/work/ehustle.jpg",
     live: "",
     github: "",
   },
@@ -96,7 +96,7 @@ const Work = () => {
                 {project.num}
               </div>
             </div>
-            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
               {project.title}
             </h2>
             <p className="text-white/60">{project.description}</p>
