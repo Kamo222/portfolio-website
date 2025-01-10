@@ -32,7 +32,7 @@ const projects = [
       { name: "Firebase" },
     ],
     image: "/assets/work/work13.jpg",
-    live: "www.konnektion.co.za",
+    live: "https://konnektion.co.za",
     github: "https://github.com/Kamo222/konnektion-demo",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     category: "fullstack",
     title: "eHustle",
     description:
-      "A self-development platform",
+      "A personal development platform",
     stack: [
       { name: "Next.js" },
       { name: "Tailwind.css" },
@@ -112,7 +112,7 @@ const Work = () => {
             </ul>
             <div className="border border-white/20"></div>
             <div className="flex items-center gap-4">
-              <Link href={project.live}>
+              <a href={project.live} target="blank">
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group mt-2">
@@ -123,8 +123,8 @@ const Work = () => {
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
-              </Link>
-              <Link href={project.github}>
+              </a>
+              <a href={project.github} target="blank" >
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group mt-2">
@@ -135,7 +135,7 @@ const Work = () => {
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
-              </Link>
+              </a>
             </div>
           </div>
           <div className="w-full xl:w-[50%] h-[20rem]">
