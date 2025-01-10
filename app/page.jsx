@@ -9,7 +9,7 @@ const Home = () => {
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between">
-          <div className="text-center xl:text-left order-2 xl:order-none">
+          <div className="text-center xl:text-left order-2 xl:order-none flex flex-col gap-2">
             <span className="text-xl">Full Stack Developer</span>
             <h1 className="h1">
               Hello I'm <br />
@@ -21,10 +21,10 @@ const Home = () => {
             <div className="flex flex-col xl:flex-row items-center gap-6 pt-2">
               <Button
                 variant="outline"
-                size="lg"
+                size="md"
                 className="uppercase flex items-center gap-1"
               >
-                <span>Download CV</span>
+                <span>View resume</span>
                 <FiDownload className="text-xl ml-2" />
               </Button>
               <div className="mb-8 xl:mb-0">
