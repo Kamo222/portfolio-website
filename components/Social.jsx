@@ -12,17 +12,18 @@ const socials = [
         path: "https://www.linkedin.com/in/kamohelo-mamaregane-065545138/"
     },
     {
-        icon: <FaInstagram />,
-        path: "https://www.instagram.com/"
-    },
-    {
-        icon: <FaFacebook />,
-        path: "https://www.facebook.com/"
-    },
-    {
         icon: <FaTwitter />,
         path: "https://www.twitter.com/"
     }
+    // {
+    //     icon: <FaInstagram />,
+    //     path: "https://www.instagram.com/"
+    // },
+    // {
+    //     icon: <FaFacebook />,
+    //     path: "https://www.facebook.com/"
+    // },
+    
 ]
 
 const Social = ({containerStyles, iconStyles}) => {

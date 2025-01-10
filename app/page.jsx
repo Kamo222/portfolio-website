@@ -2,7 +2,8 @@ import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -22,10 +23,11 @@ const Home = () => {
               <Button
                 variant="outline"
                 size="md"
-                className="uppercase flex items-center gap-1"
+                className="flex items-center justify-center"
+                href="/resume"
               >
-                <span>View resume</span>
-                <FiDownload className="text-xl ml-2" />
+                <Link href="/projects" className="uppercase flex items-center gap-1">View resume <FiArrowRight  className="text-xl ml-2" /></Link>
+                
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social
