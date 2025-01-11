@@ -17,7 +17,8 @@ const Home = () => {
               <span className="text-accent">Kamohelo Mamaregane</span>
             </h1>
             <p className="max-w-[500px]  text-white/80">
-            Creating digital experiences that inspire, inform, and connect - one pixel at a time.
+              Creating digital experiences that inspire, inform, and connect -
+              one pixel at a time.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-6 pt-2">
               <Button
@@ -26,8 +27,12 @@ const Home = () => {
                 className="flex items-center justify-center"
                 href="/resume"
               >
-                <Link href="/projects" className="uppercase flex items-center gap-1">View resume <FiArrowRight  className="text-xl ml-2" /></Link>
-                
+                <Link
+                  href="/projects"
+                  className="uppercase flex items-center gap-1"
+                >
+                  View resume <FiArrowRight className="text-xl ml-2" />
+                </Link>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social
