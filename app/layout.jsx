@@ -13,7 +13,7 @@ const jetBrains_Mono = JetBrains_Mono({
 
 export const metadata = {
   title: "Kamohelo Mamaregane | Portfolio",
-  description: "FullStack Developer",
+  description: "As a solution-oriented fullstack developer, I possess a robust foundation in modern web technologies such as HTML, CSS, JavaScript, React, Java, and Node.js.",
 };
 
  const RootLayout = ({ children }) => {

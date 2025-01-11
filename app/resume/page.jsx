@@ -194,7 +194,7 @@ const Resume = () => {
                   {experience.description}
                 </p>
 
-                <ScrollArea className="h-[10rem]">
+                <ScrollArea className="h-[25rem]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
@@ -225,13 +225,13 @@ const Resume = () => {
                   {education.description}
                 </p>
 
-                <ScrollArea className="h-[20rem]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                <ScrollArea className="h-[25rem]">
+                  <ul className="grid grid-cols-1 gap-[30px]">
                     {education.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col ustify--center item-center lg:items-start gap-1"
+                          className="bg-[#232329]  py-6 px-10 rounded-xl flex flex-col justify-center item-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.year}</span>
                           <h3 className="text-xl max-w-[260px] min-h-[60px] text-center xl:text-left">
@@ -256,7 +256,7 @@ const Resume = () => {
                   {certifications.description}
                 </p>
 
-                <ScrollArea className="h-[20rem]">
+                <ScrollArea className="h-[25rem]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {certifications.items.map((item, index) => {
                       return (
@@ -288,14 +288,14 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ScrollArea className="h-[20rem]">
+                <ScrollArea className="h-[25rem]">
                 <ul className="grid grid-cols-2 sm:grid-cols-3 xl:gap-[30px] gap-4">
                   {skills.skillList.map((skill, index) => {
                     return (
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[120px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                            <TooltipTrigger className="w-full h-[7rem] bg-[#232329] rounded-xl flex justify-center items-center group">
                               <div className="text-6xl group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
